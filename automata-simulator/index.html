@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Automata Simulator</title>
+</head>
+<body>
+    <h1>Deterministic Finite State Machine</h1>
+    <div>
+        <button id ="statebtn" class="btn statebtn" type="button" onclick="pressStateButton(this)">Create State</button>
+        <button id ="transitionbtn" class="btn transitionbtn" type="button" onclick="pressTransitionButton(this)">Create Transition</button>
+        <button id ="runbtn" class="btn runbtn" type="button" onclick="pressRunButton(this)">Run Test</button>
+        <button id ="instructionbtn" class="btn instructionbtn" type="button" onclick="pressInstructionButton(this)">Instruction</button>
+    </div>
+    <svg id ="canvas">
+    </svg>
+    <div style="overflow: hidden;">
+        <p style="float: left;">Input:&nbsp</p>
+        <p style="letter-spacing: 2px;" id ="input"></p>
+    </div>
+    <menu id="contextMenuState">
+        <menu title="Initial State"></menu>
+        <menu title="Final State"></menu>
+        <menu title="Delete"></menu>
+    </menu>
+    <menu id="contextMenuTransition">
+        <menu title="Initial State"></menu>
+        <menu title="Final State"></menu>
+        <menu title="Delete"></menu>
+    </menu>
+    <p id="demo"></p>
+    <script src="js/index.js"></script>
+</body>
+</html>
